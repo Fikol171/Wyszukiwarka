@@ -10,13 +10,10 @@
         : (listItem.style.display = "none");
     });
   };
-  const searchEngine = () => {
-    onInputAction();
-  };
-
+ 
   const init = () => {
-    search.addEventListener("keyup", searchEngine);
-    searchEngine();
+    search.addEventListener("keyup", onInputAction);
+    onInputAction();
   };
   init();
 }
