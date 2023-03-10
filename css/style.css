@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after ::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    font-family: Montserrat, sans-serif;
+    background-color: rgb(241 215 180);
+    margin-top: 50px;
+}
+
+.wrapper {
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    height: 245px;
+    padding: 20px 40px;
+    font-family: "Dancing Script", cursive;
+    background-image: url("https://i.postimg.cc/ZRhrfKsy/cold-drink-g1b59b3650-1920.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(52 89 130 / 35%);
+    z-index: -1;
+}
+
+.header__title {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.header__search {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    font-size: 30px;
+    color: #000;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+.drinkList {
+    padding: 20px 40px;
+}
+
+.drinkList__title {
+    padding: 10px;
+}
+
+.drinkList__ul {
+    padding-bottom: 30;
+    font-size: 23px;
+    list-style: none;
+}
+
+.listItem {
+    padding: 8px 30px;
+    border-bottom: 1px solid rgb(2226, 226, 226);
+}
+
+.listItem:last-child {
+    border-bottom: 0;
+}
